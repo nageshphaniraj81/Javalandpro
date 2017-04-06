@@ -5,7 +5,12 @@ public class NonStaticMemberDemo {
 	int num;
 
 	NonStaticMemberDemo() {
+		this.num = 100;
 		System.out.println("Inside constructor");
+	}
+	
+	public void iceCream(){
+		System.out.println("Type ice cream");
 	}
 	
 	{
@@ -17,6 +22,8 @@ public class NonStaticMemberDemo {
 		new NonStaticMemberDemo();
 		new NonStaticMemberDemo();
 		new NonStaticMemberDemo();
+		
+		new NonStaticMemberDemo().iceCream();
 	}
 	
 	static{
