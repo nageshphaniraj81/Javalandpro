@@ -1,4 +1,4 @@
-package BufferedReaderDemo;
+package TryWithResourceBlock;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,13 +9,14 @@ public class BufferedReaderDemo {
 
 	public static void main(String[] args) {
 
-		FileReader fr = null;
-		BufferedReader br = null;
+	
 		int count = 0;
+		
+		// Try with resource block automatically closes 
+		//the resources and hence there is no need of finally block
 
-		try {
-			fr = new FileReader("C:\\FileIOPractice\\myfile.txt");
-			br = new BufferedReader(fr);
+		try(FileReader fr = new FileReader("C:\\FileIOPractice\\myfile.txt");
+				BufferedReader br = new BufferedReader(fr);) {
 
 			String line;
 			while ((line = br.readLine()) != null) {
@@ -29,15 +30,7 @@ public class BufferedReaderDemo {
 
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				fr.close();
-				br.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-		}
+		} 
 
 	}
 
