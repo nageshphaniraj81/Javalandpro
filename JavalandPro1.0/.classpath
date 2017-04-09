@@ -13,6 +13,7 @@
 	<classpathentry kind="src" path="Arrays"/>
 	<classpathentry kind="src" path="ObjectClasses"/>
 	<classpathentry kind="src" path="IOStream"/>
+	<classpathentry kind="src" path="CollectionsFramework"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
