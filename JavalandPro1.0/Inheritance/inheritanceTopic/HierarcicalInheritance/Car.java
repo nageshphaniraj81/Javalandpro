@@ -6,4 +6,9 @@ public class Car extends Vehicle {
 	String fuel(){
 		return "Diesel";
 	}
+	
+	public void superFuel(){
+		super.fuel();
+		System.out.println(super.fuel());
+	}
 }

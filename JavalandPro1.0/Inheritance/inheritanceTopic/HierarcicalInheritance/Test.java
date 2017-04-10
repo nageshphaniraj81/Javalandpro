@@ -6,6 +6,7 @@ public class Test {
 
 		Car car = new Car();
 		System.out.println(car.fuel());
+		car.superFuel();
 		
 		Bike bike = new Bike();
 		System.out.println(bike.fuel());

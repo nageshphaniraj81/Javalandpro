@@ -1,5 +1,7 @@
 package abstractionTopic.AbstractionAssignment;
 
+import fundamentalsTopic.HelloWorld.StsticVariables;
+
 public class Test {
 
 	public static void main(String[] args) {

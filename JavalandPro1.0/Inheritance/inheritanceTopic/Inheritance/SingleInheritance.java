@@ -11,6 +11,9 @@ public class SingleInheritance {
 		si.m1();
 		si.hashCode();
 		si.getClass();
+		
+		System.out.println(si.hashCode());
+		System.out.println(si.getClass());
 	}
 	
 }

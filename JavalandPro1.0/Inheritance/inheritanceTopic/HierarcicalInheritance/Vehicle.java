@@ -2,7 +2,7 @@ package inheritanceTopic.HierarcicalInheritance;
 
 public class Vehicle {
 	
-	String fuel(){
+	 String fuel(){
 		return "Petrol";
 	}
 

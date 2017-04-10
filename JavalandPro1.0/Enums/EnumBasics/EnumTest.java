@@ -4,7 +4,7 @@ public class EnumTest {
 
 	public static void main(String[] args) {
 		PaymentTypes pt = PaymentTypes.DEBITCARD;
-		// System.out.println(pt);
+		System.out.println(pt);
 
 		// Display all payment types enums
 		PaymentTypes[] values = PaymentTypes.values();
